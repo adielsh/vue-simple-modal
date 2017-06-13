@@ -38,20 +38,7 @@
 <script>
     export default {
         props: ["modalclass"],
-        components: {},
-        data () {
-            return {}
-        },
-        computed: {},
-        methods: {},
-        created(){
-        },
-        mounted(){
-        },
-        updated(){
-        },
-        destroyed(){
-        }
+       
     }
 </script>
 
@@ -71,10 +58,4 @@
         opacity: 0.5;
         /*width: 110%;*/
     }
-
-    div#myModal {
-        /*width: 148%;*/
-        /*position: fixed;*/
-    }
-
 </style>

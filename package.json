@@ -1,0 +1,24 @@
+{
+  "name": "vue-modal-simple",
+  "version": "1.0.0",
+  "description": "Simple Vue Bootstrap Modal",
+  "main": "ModalVue.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adielsh/Vue-Component-Bootstrap-Modal.git"
+  },
+  "keywords": [
+    "vue",
+    "bootstrap",
+    "modal"
+  ],
+  "author": "adiel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adielsh/Vue-Component-Bootstrap-Modal/issues"
+  },
+  "homepage": "https://github.com/adielsh/Vue-Component-Bootstrap-Modal#readme"
+}
