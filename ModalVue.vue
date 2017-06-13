@@ -24,7 +24,7 @@
                         <div class="col-xs-12 ">
                             <slot name="footer"></slot>
                             <button type="button" class="btn btn-default" data-dismiss="modal"
-                                    @click="$emit('close')">סגור
+                                    @click="show=!show">סגור
                             </button>
                         </div>
                     </div>
@@ -37,18 +37,14 @@
 
 <script>
     export default {
-        props: ["modalclass","show"],
+        props: ["modalclass"],
 		  data () {
               return {
                  show: true
                     }
                   },
 				  
-        created(){
-		if(!this.show){
-		this.show = true
-		              }
-		          }
+      
        
     }
 </script>

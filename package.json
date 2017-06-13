@@ -1,6 +1,6 @@
 {
   "name": "vue-modal-simple",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Simple Vue Bootstrap Modal",
   "main": "ModalVue.vue",
   "scripts": {
