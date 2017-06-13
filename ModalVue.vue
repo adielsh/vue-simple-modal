@@ -1,11 +1,11 @@
 <template>
-    <div id="myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    <div v-if="show" id="myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
          style="display: block;">
         <div class="modal-dialog " :class="modalclass" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-                            @click="$emit('close')"
+                            @click="show=false"
                             aria-hidden=" true"><span>
                         &times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">
@@ -37,7 +37,18 @@
 
 <script>
     export default {
-        props: ["modalclass"],
+        props: ["modalclass","show"],
+		  data () {
+              return {
+                 show: true
+                    }
+                  },
+				  
+        created(){
+		if(!this.show){
+		this.show = true
+		              }
+		          }
        
     }
 </script>
