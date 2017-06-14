@@ -37,7 +37,10 @@
 
 <script>
     export default {
-        props: {show:{default:true}}
+        props: {
+	show:{default:true},
+	
+	}
 
 	created(){}			  
       
@@ -50,7 +53,7 @@
         max-height: calc(100vh - 210px);
         overflow-y: auto;
         direction: rtl;
-        /*width: 110%;*/
+       
     }
 
     .modal-backdrop {
@@ -59,6 +62,5 @@
         background-color: white;
         z-index: 1000;
         opacity: 0.5;
-        /*width: 110%;*/
     }
 </style>
