@@ -1,5 +1,5 @@
 <template>
-    <div v-if="show ? show : true" id="myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    <div v-if="show" myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
          style="display: block;">
         <div class="modal-dialog " :class="modalclass" role="document">
             <div class="modal-content">
@@ -37,7 +37,7 @@
 
 <script>
     export default {
-        props: ["modalclass","show"],
+        props: {show:{default:true}}
 
 	created(){}			  
       
