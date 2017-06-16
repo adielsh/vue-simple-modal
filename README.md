@@ -19,6 +19,9 @@ $ yarn add vue-modal-simple
 ```
 Then write in your vue file:
 ```
+<template>
+                    <Vue-Simple-Modal :show.sync="showModal"></Vue-Simple-Modal>
+</template>
 import Vue-Simple-Modal from 'vue-simple-modal'
 <script>
 export default {
@@ -26,6 +29,12 @@ export default {
           Vue-Simple-Modal
                   }
                }
+       data(){
+           return
+             {
+             show:true
+             }
+       }
 </script>
 ```
 Enjoy :)
