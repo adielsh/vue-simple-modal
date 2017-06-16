@@ -1,11 +1,11 @@
 <template>
-    <div v-if="show" myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    <div v-if="show" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
          style="display: block;">
         <div class="modal-dialog " :class="modalclass" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-                            @click=" @click="$emit('update:show', false)"
+                            @click="$emit('update:show', false)"
                             aria-hidden=" true"><span>
                         &times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">
@@ -37,13 +37,7 @@
 
 <script>
     export default {
-        props: {
-	show:{default:true},
-	
-	}
-
-	created(){}			  
-      
+        props: {show: {default: true, type: Boolean}},
        
     }
 </script>
@@ -53,7 +47,7 @@
         max-height: calc(100vh - 210px);
         overflow-y: auto;
         direction: rtl;
-       
+
     }
 
     .modal-backdrop {
