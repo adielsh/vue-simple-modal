@@ -22,7 +22,7 @@ Then write in your vue file:
 <template>
                     <Vue-Simple-Modal :show.sync="showModal"></Vue-Simple-Modal>
 </template>
-import VueSimpleModal from 'vue-simple-modal'
+import VueSimpleModal from 'vue-modal-simple'
 <script>
 export default {
        components:{
