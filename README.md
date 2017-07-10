@@ -20,13 +20,13 @@ $ yarn add vue-modal-simple
 Then write in your vue file:
 ```
 <template>
-                    <Vue-Simple-Modal :show.sync="showModal"></Vue-Simple-Modal>
+                    <SimpleModal :show.sync="showModal"></SimpleModal>
 </template>
-import VueSimpleModal from 'vue-modal-simple'
+import SimpleModal from 'vue-modal-simple'
 <script>
 export default {
        components:{
-          VueSimpleModal
+          SimpleModal
                   }
                }
        data(){
