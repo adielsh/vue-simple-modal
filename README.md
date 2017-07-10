@@ -26,7 +26,7 @@ import Vue-Simple-Modal from 'vue-simple-modal'
 <script>
 export default {
        components:{
-          Vue-Simple-Modal
+          VueSimpleModal
                   }
                }
        data(){
