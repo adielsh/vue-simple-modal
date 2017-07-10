@@ -20,7 +20,10 @@ $ yarn add vue-modal-simple
 Then write in your vue file:
 ```
 <template>
-                    <SimpleModal :show.sync="showModal"></SimpleModal>
+                    <SimpleModal :show.sync="showModal">
+                    <!--You can write here : -->
+                       <div slot="body">Here might be a modal body</div>
+                    </SimpleModal>
 </template>
 import SimpleModal from 'vue-modal-simple'
 <script>
