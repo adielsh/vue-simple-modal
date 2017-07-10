@@ -32,7 +32,7 @@ export default {
        data(){
            return
              {
-             show:true
+             showModal:true
              }
        }
 </script>
