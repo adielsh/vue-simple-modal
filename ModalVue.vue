@@ -34,7 +34,6 @@
     </div>
     <!--<div class="modal-backdrop fade in"></div>-->
 </template>
-
 <script>
     export default {
         props: {show: {default: true, type: Boolean}},
