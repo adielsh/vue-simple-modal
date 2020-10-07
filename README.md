@@ -2,7 +2,7 @@
 
 
 
-Bootstrap Modal on Vue component 
+Bootstrap Modal with Vue component 
 It's a vue component of Bootstrap Modal.
 Include a slots, that you can override them and write your code inside.
 
